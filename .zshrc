@@ -81,7 +81,5 @@ export EDITOR=vim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-
-
-source /Users/sebastien/Documents/Work/Tools/kube-ps1/kube-ps1.sh
+source $HOME/Documents/Work/Tools/kube-ps1/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
