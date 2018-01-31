@@ -47,8 +47,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	kubectl 
-	vagrant
+	colored-man-pages
 	zsh-autosuggestions
 )
 
