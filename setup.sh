@@ -8,6 +8,7 @@ set -xeou pipefail
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 for f in .zshrc \
+    .oh-my-zsh/custom/docker.zsh \
     .oh-my-zsh/custom/k8s.zsh; do
     if [ -f "$HOME/$f" ]; then rm "$HOME/$f"; fi
     ln -sf "$SCRIPT_DIR/$f" "$HOME/$f"
