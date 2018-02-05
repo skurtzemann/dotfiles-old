@@ -9,6 +9,10 @@ alias kga="kubectl get all --all-namespaces"
 alias kd="kubectl describe"
 alias kdp="kubectl describe pod"
 
+# Delete
+alias kdel="kubectl delete"
+alias kdelp="kubectl delete pod"
+
 # Create from a ressource file (imperative mode)
 kc() {
 	kubectl create -f $1
