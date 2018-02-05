@@ -18,6 +18,14 @@ kr() {
 	kubectl replace -f $1
 }
 
+# Apply a configuration (declarative mode)
+ka() {
+	kubectl apply -f $1
+}
+kar() {
+	kubectl apply -f $1 --recursive=true
+}
+
 # Exec a bash shell into the specify Pod
 kep() {
 	kubectl exec -it $1 sh
