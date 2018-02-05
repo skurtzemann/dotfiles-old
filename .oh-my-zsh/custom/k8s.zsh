@@ -47,6 +47,7 @@ alias h="helm"
 alias kx="kubectx"
 alias kns="kubens"
 alias fx="fluxctl"
+alias m="minikube"
 
 fx-init() {
 	flux_host=$(minikube ip)
