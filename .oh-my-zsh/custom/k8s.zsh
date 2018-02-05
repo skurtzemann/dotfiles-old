@@ -7,6 +7,7 @@ alias kga="kubectl get all --all-namespaces"
 
 # Describe
 alias kd="kubectl describe"
+alias kdp="kubectl describe pod"
 
 # Create from a ressource file (imperative mode)
 kc() {
