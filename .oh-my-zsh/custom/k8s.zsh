@@ -8,12 +8,12 @@ alias kga="kubectl get all --all-namespaces"
 # Describe
 alias kd="kubectl describe"
 
-# Create from a ressource file
+# Create from a ressource file (imperative mode)
 kc() {
 	kubectl create -f $1
 }
 
-# Replace a ressource from a file
+# Replace a ressource from a file (imperative mode)
 kr() {
 	kubectl replace -f $1
 }
