@@ -33,7 +33,11 @@ kar() {
 
 # Exec a bash shell into the specify Pod
 kep() {
-	kubectl exec -it $1 sh
+	if [ -z $2 ]; then
+		kubectl exec -it $1 bash
+	else
+		kubectl exec -it $1 $2
+	fi
 }
 
 # Tail log from a specific object
