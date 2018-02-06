@@ -7,7 +7,8 @@ set -xeou pipefail
 
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-for f in .zshrc \
+for f in \
+    .zshrc \
     .oh-my-zsh/custom/ansible.zsh \
     .oh-my-zsh/custom/docker.zsh \
     .oh-my-zsh/custom/k8s.zsh; do
